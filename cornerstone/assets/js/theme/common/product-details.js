@@ -275,9 +275,7 @@ export default class ProductDetails {
                 /*
                     Should match zoom size used for data-zoom-image in
                     components/products/product-view.html
-
                     Note that this will only be used as a fallback image for browsers that do not support srcset
-
                     Also note that getSrcset returns a simple src string when exactly one size is provided
                 */
             );
@@ -288,9 +286,7 @@ export default class ProductDetails {
                 /*
                     Should match fallback image size used for the main product image in
                     components/products/product-view.html
-
                     Note that this will only be used as a fallback image for browsers that do not support srcset
-
                     Also note that getSrcset returns a simple src string when exactly one size is provided
                 */
             );

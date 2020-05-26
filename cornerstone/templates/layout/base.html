@@ -2,6 +2,7 @@
 <html class="no-js" lang="{{ locale_name }}">
     <head>
         <title>{{ head.title }}</title>
+        <div>some title here</div>
         {{{ resourceHints }}}
         {{{ head.meta_tags }}}
         {{{ head.config }}}
@@ -9,7 +10,11 @@
 
         <link href="{{ head.favicon }}" rel="shortcut icon">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+        <script type="application/javascript">
+          function addThree(){
+            
+          }
+        </script>
         <script>
             {{!-- Change document class from no-js to js so we can detect this in css --}}
             document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
@@ -21,7 +26,7 @@
             window.lazySizesConfig.loadMode = 1;
         </script>
         <script async src="{{cdn 'assets/dist/theme-bundle.head_async.js'}}"></script>
-
+    
         {{ getFontsCollection }}
         {{{stylesheet '/assets/css/theme.css'}}}
 
@@ -39,6 +44,7 @@
         <svg data-src="{{cdn 'img/icon-sprite.svg'}}" class="icons-svg-sprite"></svg>
 
         {{> components/common/header }}
+        <button id='bad-btn' onClick='addThree'>Add items to cart</button>
         {{> components/common/body }}
         {{> components/common/footer }}
 
